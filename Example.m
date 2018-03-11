@@ -20,7 +20,6 @@ fprintf(s,'1');     % switch power on USB port
 pause(2);           % wait for 2 seconds
 fprintf(s,'0');     % switch power off USB port
 
-pause(2);           % wait for 2 seconds
 fclose(s);      % close serial port
 delete(s);      % delete serial port
 clear s;        % remove s from workspace
