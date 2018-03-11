@@ -23,9 +23,9 @@ void loop() {
       Serial.println(incomingByte, HEX);  // send DEBUG output repeat received data in HEX
     #endif
     if(incomingByte==0x30) {              // if '0' is received
-      digitalWrite(RELAY_PORT, HIGH);     // switch USB power on
-    } else if (incomingByte==0x31) {      // if '1' is received
       digitalWrite(RELAY_PORT, LOW);      // switch USB power off
+    } else if (incomingByte==0x31) {      // if '1' is received
+      digitalWrite(RELAY_PORT, HIGH);     // switch USB power on
     } else {                              // if something else is received
                                           // ignore all other data
     }
